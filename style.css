@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    background-color:#1f1b1a;
+    color: white;
+}
+.service{
+    padding: 25px 0;
+    font-family: 'Poppins',sans-serif;
+    color: black;
+}
+
+.max-width{
+      max-width: 1300px;
+      padding:  0 45px;
+      margin: auto;   
+}
+.max-width h1{
+     text-align: center;
+     position: relative;
+     font-size: 50px;
+     font-weight: 500;
+     margin-bottom: 60px;
+     padding-bottom: 20px;
+}
+
+.max-width h1::after{
+     content: '';
+     position: absolute;
+     width: 170px;
+     height: 3px;
+     background:black;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+}
+.card{
+    padding: 20px 20px;
+    margin:5px;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background: rgb(122, 148, 158);
+    user-select: none;
+    cursor:pointer;
+    transition: color 0.3s ease;
+    margin-block-start: 2em;
+}
+
+.box{
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    width: 25px;
+    height:50px;
+}
+.card:hover .box i{
+    color: white;
+                     
+}
+.box i{
+    font-size: 25px;
+    color: white;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+.box h3{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    text-align: center;
+}
+.card-link{
+   font-size: 15px;
+   color: white;
+   display: inline;
+
+}
+.card-link:hover{
+   cursor: pointer;
+   color: blue;
+   display: inline-flex;
+   transition: color 0.3s ease; 
+
+}
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
